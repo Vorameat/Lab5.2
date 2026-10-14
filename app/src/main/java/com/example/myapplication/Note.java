@@ -16,7 +16,8 @@ public abstract class Note {
         this.user = user;
     }
 
-    public abstract void getSummary();
+    // เปลี่ยน void เป็น String บรรทัดนี้ครับ
+    public abstract String getSummary();
 
     // Getter & Setter
     public String getTitle() { return title; }

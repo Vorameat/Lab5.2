@@ -10,7 +10,8 @@ public class NoteController {
     }
 
     public void addTextNote(String title, String content) {
-        TextNote note = new TextNote(title, content, "", currentUser);
+        TextNote note = new TextNote(title, content);
+        note.setUser(currentUser);
         currentUser.addNote(note);
     }
 

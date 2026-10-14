@@ -6,6 +6,65 @@
     android:padding="16dp">
 
     <!-- แสดงข้อมูลเจ้าของโน้ต (โจทย์ข้อ 3) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- แสดงข้อมูลเจ้าของโน้ต -->
+        <TextView
+            android:id="@+id/tvUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="Owner Info"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- ปุ่มเพิ่มโน้ตใหม่ (Lab 5) -->
+        <Button
+            android:id="@+id/btnAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เพิ่มโน้ตใหม่" />
+
+        <!-- ปุ่ม Browse Notes (Lab 6) -->
+        <Button
+            android:id="@+id/btnBrowseNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ค้นหา/ดูรายการโน้ต (Browse Note)" />
+
+        <!-- ProgressBar สำหรับ Multitasking Threading (Lab 6) -->
+        <ProgressBar
+            android:id="@+id/progressBarMain"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="รายการโน้ตทั้งหมด:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- แสดงรายการโน้ต -->
+        <TextView
+            android:id="@+id/tvNoteList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvUserInfo"
         android:layout_width="match_parent"
